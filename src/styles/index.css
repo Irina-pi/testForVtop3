@@ -96,6 +96,10 @@ h3 {
   justify-self: center;
 }
 
+.header_button-language>p {
+  margin: 0;
+}
+
 .svg-button-language {
   height: 1rem;
   width: 1rem;

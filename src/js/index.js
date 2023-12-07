@@ -17,3 +17,17 @@ menuCloseSvgEl.addEventListener("click", (event) => {
   headerMenuEl.classList.toggle(toggleClass);
   headerButtonsBlockEl.classList.toggle(toggleClass);
 });
+
+
+
+const btnLanguageEl = document.getElementById("buttonLanguage");
+const pLanguageEl = document.createElement('p');
+
+btnLanguageEl.appendChild(pLanguageEl);
+let textCont = pLanguageEl.textContent = 'en';
+
+btnLanguageEl.addEventListener('click', (ev) => {
+  if (textCont === 'en') {
+    textCont = pLanguageEl.textContent = 'ru';
+  } else textCont = pLanguageEl.textContent = 'en';
+})
